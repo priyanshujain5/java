@@ -1,0 +1,3 @@
+it is syncronized arraylist.
+what does copyonwrite means?
+in this arraylist whenever we add or remvoe the element, it not removed or added directly into the arraylist , first its copy is created and modification performed on it, than we stored the modified reference so that other thread will read the modified list.
