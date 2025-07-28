@@ -1,0 +1,8 @@
+collection is a parent interface.
+list interface extend the collection interface.(java.util package m present h)
+list provide data to store in order or sequence , it allow duplicay.
+key feature of list
+1. order preserve 
+2. duplicay allow
+3. index based access
+arraylist, linkedlist , vector and stack are the classes that implement the list interface

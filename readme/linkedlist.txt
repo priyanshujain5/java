@@ -1,0 +1,16 @@
+it is same as we read in cpp
+it store data in node , where node has data and reference to next node.
+it not stored in continuos location therefore it has no random access, you have to traverse each node.
+
+method to insert data in list
+add(): in last , addFirst(): at head , addLast(): at last
+
+to access data
+get(index) , getFirst() , getLast()
+
+to remove 
+remove(): remove head, removeFirst(): remove head , removeLast(): last element , remove(index): element at that position , remove(object)
+removeif(condition/lambda exp)
+
+to check an element exist
+contains(element) , containAll()

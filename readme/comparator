@@ -1,0 +1,8 @@
+it is an interface.
+it has compare method in it , it compare the 2 objects of same type and determine their order.
+it is used to write custom logic of ordering 
+
+if compare funtion return 
+negative value: than first value occur before the second value
+zero value: than both have same order
+positive value: than second value occur before the first value

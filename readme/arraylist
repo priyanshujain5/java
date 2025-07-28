@@ -1,0 +1,42 @@
+it is resizable , change their size dynamically , unlike array that they are of fixed size.
+to create arraylist
+1. list<datatype> ls = new ArrayList<>(initial capacity(optional));
+2. ArrayList<datatype> ls = new ArrayList<>(initial capacity(optional));
+
+methods
+
+1. add(): used to add element in the list.
+2. get(index): used to get the value stored at index.
+3. size(): used to get the number of element present in list
+4. contains(value): used to check the value exist in list.
+5. remove(index/object): used to remove the value present at the index or the object provided.
+6. add(index,value): add value at the given index.(it shift the value previous at that index).
+7. set(index,value): replace the value at the index.
+8. trimtosize(): used to trim the capacity of arraylist manually
+9. addAll(colllection): used to add a collection in list
+
+internal working
+unlike regular array, which has fixed size , arraylist can grow and shrink as element added or removed. this resizing is achieved by creating a new array when the current array is full and copying the element into new array.
+
+arraylist has default capacity of 10 by default.
+
+how element is added in arraylist?
+3 step
+1. check capacity of arraylist, is there enough space to add an element
+2. resize if needed to 1.5times of current capacity and copy element from old array to new array.
+3. add the element in new array 
+
+o(n) time took to copy old array value to new array.
+
+how element is removed from arraylist?
+3 step
+1. check bound , is the index is valid.
+2. remove the element and all the element on its right are shifted one position to left.
+3. size decremented by 1
+
+tc
+o(1) in get() method
+o(n) in adding and removing element
+
+to sort list
+arraylistname.sort(null); it take comapartor as input

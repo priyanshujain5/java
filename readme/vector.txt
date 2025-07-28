@@ -1,0 +1,7 @@
+present in java.util package
+it is legacy class.
+it is syncronized that mean thread safe, that mean multiple thread can work on vector without risk of corrupting the data.
+it is like arraylist , can grow its size and dynamic in nature.
+vector have capacity() method to check the capacity of vector.
+here the size by default get 2x , but we can also manually set the increment capactiy.
+it also has same method as linkedlist and arraylist have.
