@@ -6,6 +6,7 @@ key unique but value may be duplicate, it is unordered.
 key can be null.
 
 In map if key is not present than its value is null by default.
+hashmap has an internal array of size 16 by default, it got resized on load factor of 0.75, and got double of previous size.
 
 method:
 1. put(key,value): to put key and value in map.
@@ -17,3 +18,23 @@ method:
 
 time complexity:
 get and put both have o(1) tc.
+
+internal working of hashmap:
+
+hashmap stores internaly a key value pair in arraylist , where at each index of arraylist has a pair of key value.
+
+hashfunction: it is an algorithm that takes an input (key) and return fixed sized string of byte , typically numerical value , known as hash code. the primary function of hash function is to map data of arbitary size to data of fixed size.
+
+characterstics:
+1 . deterministic: same output always for same input.
+2 . fixed size output
+
+how data store:
+1. hash code generation from key value.
+2. find index in array where that pair is store using int index = hashcode% arraysize
+3. storing in the bucket(array)
+
+how data retrive:
+1. hash code from key.
+2. finding index from hashcode.
+3. serach in bucket which can store multiple pair of key vlaue at same index.
