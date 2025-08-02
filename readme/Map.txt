@@ -1,0 +1,19 @@
+Map is interface.
+think of it is like a dictionary.
+where we have some word and its value.
+In java map is object , that has key with value , cannot contain duplicates , each key have atmost 1 value,
+key unique but value may be duplicate, it is unordered.
+key can be null.
+
+In map if key is not present than its value is null by default.
+
+method:
+1. put(key,value): to put key and value in map.
+2. get(key): to get a value of a particular key.
+3. containsKey(key): used to check that the key is present or not.
+4. containsValue(value): used to check that the value is present or not in map.
+5. keySet(): it return set of key from map.
+6. remove(key): remove key value from map. or you can write remove(key,value) to delete particular entry.
+
+time complexity:
+get and put both have o(1) tc.
